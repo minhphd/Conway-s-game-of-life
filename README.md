@@ -28,10 +28,20 @@ java LandscapeDisplay
 5. After putting in the dimension, u will have two option. 
     - Creating a blank landscape: for this option, the program will repeatedly ask you the coordinates and status you want to set for the cell. To finish setting up, press enter without writing anything.
 
+    ![](https://github.com/minhphd/Conway-s-game-of-life/blob/main/img/terminalBlank.gif)
+
     - Creating a landscape with randomly generated Cells with random state of alive and dead based on user-defined probability
+
+    ![](https://github.com/minhphd/Conway-s-game-of-life/blob/main/img/terminalNoBlank.gif)
 
 6. Enjoy watching the evolution of cells
 
+![](https://github.com/minhphd/Conway-s-game-of-life/blob/main/img/run-20220922-2106/run-20220922-2106.gif)
+
 The game will end when the program detect that the simulation has become a loop
 
+**By default, the simulation will output a file into the img folder with each frame of a run, you can turn that off by passing false as a parameter instead of true in line 138 of LandscapeDisplay.java**
 
+```
+life.runSimulation(false);
+```
